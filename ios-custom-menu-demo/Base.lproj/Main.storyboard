@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_custom_menu_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rY3-vs-7yk">
+                                <rect key="frame" x="0.0" y="614" width="375" height="138"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RV-CQ-pB3" customClass="RoundButton" customModule="ios_custom_menu_demo" customModuleProvider="target">
+                                        <rect key="frame" x="165" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="M5z-BD-AUG"/>
+                                            <constraint firstAttribute="width" constant="44" id="rKL-5w-bWs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                        <state key="normal" title="↑">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapSelectMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uL8-nh-BFi"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="hZ9-QM-V8R">
+                                        <rect key="frame" x="44" y="74" width="287" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOL-xg-50r" customClass="RoundButton" customModule="ios_custom_menu_demo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="4sN-tA-p4h"/>
+                                                    <constraint firstAttribute="width" constant="44" id="zbF-iQ-EQH"/>
+                                                </constraints>
+                                                <state key="normal" title="F">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" cocoaTouchSystemColor="lightTextColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapSelectMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UJ3-Ec-tu4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrC-5t-zP7" customClass="RoundButton" customModule="ios_custom_menu_demo" customModuleProvider="target">
+                                                <rect key="frame" x="121.5" y="0.0" width="44" height="44"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="BiK-se-7mQ"/>
+                                                    <constraint firstAttribute="width" constant="44" id="mIv-bm-WCd"/>
+                                                </constraints>
+                                                <state key="normal" title="T">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapSelectMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7DB-B7-723"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDY-3o-jaK" customClass="RoundButton" customModule="ios_custom_menu_demo" customModuleProvider="target">
+                                                <rect key="frame" x="243" y="0.0" width="44" height="44"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="DAq-E0-7mA"/>
+                                                    <constraint firstAttribute="height" constant="44" id="cM4-Ia-FS9"/>
+                                                </constraints>
+                                                <state key="normal" title="I">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapSelectMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JXb-9N-28B"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="138" id="KPa-mK-Atw"/>
+                                    <constraint firstAttribute="trailing" secondItem="hZ9-QM-V8R" secondAttribute="trailing" constant="44" id="RuN-Ku-6Ed"/>
+                                    <constraint firstItem="hZ9-QM-V8R" firstAttribute="leading" secondItem="rY3-vs-7yk" secondAttribute="leading" constant="44" id="T7r-So-56W"/>
+                                    <constraint firstAttribute="bottom" secondItem="hZ9-QM-V8R" secondAttribute="bottom" constant="20" id="cVa-ra-uMz"/>
+                                    <constraint firstItem="3RV-CQ-pB3" firstAttribute="top" secondItem="rY3-vs-7yk" secondAttribute="top" id="geS-dJ-0So"/>
+                                    <constraint firstItem="3RV-CQ-pB3" firstAttribute="centerX" secondItem="rY3-vs-7yk" secondAttribute="centerX" id="xrm-Op-lIz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rY3-vs-7yk" secondAttribute="trailing" id="MpK-xx-xra"/>
+                            <constraint firstItem="rY3-vs-7yk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gJS-BK-LL4"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="rY3-vs-7yk" secondAttribute="bottom" constant="-85" id="kK7-zj-Axy"/>
+                            <constraint firstItem="rY3-vs-7yk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wVl-8l-Gre"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="menuButton" destination="3RV-CQ-pB3" id="WfQ-ZA-3Nq"/>
+                        <outlet property="menuView" destination="rY3-vs-7yk" id="guP-j3-3bA"/>
+                        <outletCollection property="buttons" destination="mOL-xg-50r" collectionClass="NSMutableArray" id="qAd-8Z-CSq"/>
+                        <outletCollection property="buttons" destination="OrC-5t-zP7" collectionClass="NSMutableArray" id="ghm-zT-iBq"/>
+                        <outletCollection property="buttons" destination="BDY-3o-jaK" collectionClass="NSMutableArray" id="U4O-E4-FtI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
